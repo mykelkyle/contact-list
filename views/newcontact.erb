@@ -1,0 +1,17 @@
+<!-- views/new_contact.erb -->
+<h2>Add New Contact</h2>
+
+<form action="/contacts" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="phone">Phone:</label>
+  <input type="tel" id="phone" name="phone" required>
+
+  <!-- Add more fields as needed for your contact information -->
+
+  <button type="submit">Add Contact</button>
+</form>

@@ -1,0 +1,17 @@
+<!-- views/new_contact.erb -->
+<h2>Edit Contact</h2>
+
+<form action="/contacts/<%= @contact.id %>/edit" method="post">
+  <label for="name">Name:</label>
+  <input value="<%= @contact.name %>" type="text" id="name" name="name" required>
+
+  <label for="email">Email:</label>
+  <input value="<%= @contact.email %>" type="email" id="email" name="email" required>
+
+  <label for="phone">Phone:</label>
+  <input value="<%= @contact.phone %>" type="tel" id="phone" name="phone" required>
+
+  <!-- Add more fields as needed for your contact information -->
+
+  <button type="submit">Edit Contact</button>
+</form>

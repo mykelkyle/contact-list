@@ -1,0 +1,35 @@
+<!-- views/layout.erb -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact List App</title>
+  <!-- Add any additional head content, stylesheets, or scripts here -->
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Contact List App</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/contacts">Contacts</a></li>
+        <li><a href="/newcontact">Add New Contact</a></li>
+        <!-- Add more navigation links as needed -->
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <%= yield %> <!-- This will be replaced with the content of individual views -->
+  </main>
+
+  <footer>
+    <p>&copy; 2022 Contact List App</p>
+  </footer>
+
+</body>
+</html>
